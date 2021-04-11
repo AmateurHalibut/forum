@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import ImageHover from "./ImageHover"
 import DynamicLink from "./DynamicLink"
+import defaultImg from './../../assets/logoGold.png'
+import hoverImg from "./../../assets/logoWhite.png"
 
 const Navbar = props => {
     return (
@@ -10,8 +12,8 @@ const Navbar = props => {
                 <a href="http://mtu.edu/">
                     <ImageHover 
                         height={60}
-                        default={"/assets/logoGold.png"} 
-                        hover={"/assets/logoWhite.png"}
+                        default={defaultImg} 
+                        hover={hoverImg}
                         className={"headerImage"}
                         altText={"Michigan Technological University"}
                     />
