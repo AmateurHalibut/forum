@@ -2,6 +2,15 @@
 
 const path = require("path");
 const express = require("express");
+const mysql = require("mysql");
+
+// Create connection to DB
+const db = mysql.createPool({
+    host: 'localhost',
+    user: 'root',
+    password: 'CS3141',
+    database: 'cs3141',
+});
 
 const db = require('./models')
 
@@ -18,9 +27,14 @@ app.use("/posts", postRouter)
 
 
 // Handle GET requests to /api route
+//app.get("/api", (req, res) => {
+//  res.json({ message: "Hello from server!" });
+//});
+
 app.get("/api", (req, res) => {
   res.json({ message: "Hello from server!" });
 });
+
 
 db.sequelize.sync().then(() => {
   app.listen(PORT, () => {
@@ -32,7 +46,6 @@ db.sequelize.sync().then(() => {
 //app.get('*', (req, res) => {
 //  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 //});
-
 
 
 
