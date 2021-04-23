@@ -37,8 +37,7 @@ const Links = props => {
                 {createLink(0, "/", "Home")}
                 {createLink(1, "/threads", "Threads")}
                 {createLink(2, "/about", "About")}
-                {createLink(3, "/faq", "FAQ")}
-                {createLink(4, "/rules", "Rules")}
+                {createLink(3, "/help", "Help Center")}
                 <span> </span>  {/* Adds spacing before Log in */}
                 {createLogIn()}
             </div>
@@ -101,8 +100,7 @@ class Grid extends React.Component {
                             <a href="/"> <li className="li-main"> Home </li> </a>
                             <a href="/Threads"> <li className="li-main"> Threads </li> </a> 
                             <a href="/About"> <li className="li-main"> About </li> </a>
-                            <a href="/FAQ"> <li className="li-main"> FAQ </li> </a>
-                            <a href="/Rules"> <li className="li-main"> Rules</li> </a>
+                            <a href="/Help"> <li className="li-main"> Help Center</li> </a>
                             <a href="/Login"> <li className="li-login"> Log in </li> </a>
                             </ul>
                         </div>

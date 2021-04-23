@@ -67,7 +67,7 @@ const DoesNotExist = () => {
                             Well, this is embarrassing. Who let the dogs out?
                         </p>
                         <p>
-                            Check the <a href="/">Help Center</a> or click this button to sled back to safety.
+                            Check the <a href="/help">Help Center</a> or click this button to sled back to safety.
                         </p>
 
                         <a href="/"> <Hover default={buttonContainerD} active={buttonContainerA} button={buttonStyle} /> </a>
