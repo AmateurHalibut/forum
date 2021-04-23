@@ -4,23 +4,15 @@ const DisplayMessage = ({info}) => {
      const t = window.location.pathname;
     if (t === "/") { //home - display all messages
         return ( 
-            <div className="DisplayMessage">
-                <h2>Recent messages: </h2>
+            <div id="disp-msg-cont">
+                <div className="dm-title">Recent messages</div>
                 {info.sort((a,b) => b.id - a.id).map(MU => (
                     
-                   <div id="previewMessage" key={MU.id}>
-                       
-                     <table>
-                            <tr>                               
+                   <div id="previewMessage" key={MU.id}>         
                             <td class="messageContent"> "{MU.message}"</td>
                             <div className="userInfo"> - {MU.user}</div>
                             <div className="idContent"> (ID: {MU.id})</div>
-                            </tr>
-                    </table>
-                            
                    </div>
-                   
-                   
                ))}
                 <Footer/>  
             </div>
@@ -29,22 +21,15 @@ const DisplayMessage = ({info}) => {
         const newt = t.substring(9, t.length);
 
         return ( 
-            <div className="DisplayMessage">
-                
-                <div classname = "topic"></div>
+            <div id="disp-msg-cont">
+                <div className="dm-title">Thread {newt} </div>
                 {info.filter(MU => MU.threadID === newt).sort((a,b) => b.id - a.id).map(MU => (
                     
-                   <div id="previewMessage" key={MU.id}>
-                       
-                            
-                                <div className="messageContent"> "{MU.message}"</div>
-                                <div className="userInfo"> - {MU.user}</div>
-                                <div className="idContent"> (ID: {MU.id})</div>
-                                
-                   </div>
-                
-                   
-                   
+                <div id="previewMessage" key={MU.id}>
+                    <div className="messageContent"> "{MU.message}"</div>
+                    <div className="userInfo"> - {MU.user}</div>
+                    <div className="idContent"> (ID: {MU.id})</div>     
+                </div>  
                ))}
             </div>
          );

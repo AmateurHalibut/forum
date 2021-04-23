@@ -23,17 +23,17 @@ const SendMessage = () => {
     }
 
     return (
-        <div className="SendMessage">
-            
-            <h2>Send a message:</h2>
+        <div id="disp-msg-cont">
+            <div className="dm-title">Send a message</div>
             <form class onSubmit={handleSendMessage}>
                 <input 
                     type="text"
                     required
                     value = {message}
                     onChange = {(e) => setMessage(e.target.value)}
+                    className="dm-new-msg"
                 />
-                <button class = "Send">Send</button>
+                <button className="dm-button">Send</button>
             </form>
         </div>
     );

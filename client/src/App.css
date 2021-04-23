@@ -70,8 +70,6 @@ body {
   
 }
 
-
-
 .btn {
   position: absolute;
   top: 110px;
@@ -83,6 +81,7 @@ body {
   color: var(--btnFontColor);
   background-color: var(--btnBg);
 }
+
 .Send {
   position: absolute;
   height: 40px;
@@ -90,6 +89,7 @@ body {
   color:black;
   background-color: rgb(0, 255, 0);
 }
+
 .Create{
   position: absolute;
   height: 40px;

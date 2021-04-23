@@ -52,6 +52,11 @@ body {
   overflow-x: hidden;
 }
 
+#home {
+  background-image: url("./assets/404bg.png");
+  background-repeat: repeat;
+}
+
 #top-banner {
   width: 100%;
   height: 60px;
@@ -276,7 +281,7 @@ li.li-login a {
 }
 
 #container {
-  /* background ; */
+  background: transparent;
   z-index: -1;
   position: relative;
   width: 100%;
@@ -319,49 +324,80 @@ li.li-login a {
 }
 
 /* Display Message */
+#disp-msg-cont {
+  background-color: transparent;
+  display: inline-block;
+  width: 65%;
+}
 
-
-.DisplayMessage{
-  position: relative;
+.dm-title {
+  font-family: 'Poppins-B';
+  font-size: 2em;
+  color: black;
   text-align: left;
-  white-space: pre;
+  padding: 5px 5px 0px 5px;
+  text-transform: uppercase;
+}
+
+.dm-new-msg {
+  width: 95%;
+  margin-left: -4%;
+  border: 0;
+  background: white;
+  color: #636363;
+  font-size: 18px;
+  padding: 0%;
+  outline: none;
+  border-bottom:#636363;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+}
+
+.dm-new-msg:focus {
+  color: black;
+  border-bottom:black;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+}
+
+.dm-button {
+  outline: none;
+  border: 0;
+  background-color: #ffcd00;
+  color: black;
+  font-weight: 450;
+  width: 10%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Poppins-SB";
+}
+
+.dm-button:hover {
+  background-color: #fadb5a;
 }
 
 #previewMessage {
-  margin: relative;
-  width:590px;
-  /* white-space: pre; */
-  height: 110px;
+  margin: auto;
+  width: 100%;
   background: #333;
-  border-radius:  20px;
-  padding: 10px;
-  margin: 0px 0px 20px 1px;
-  padding-right:10;
-  
+  border-radius:  0px;
+  padding: 5px;
+  margin-bottom:2px;
 }
+
 .messageContent {
-  white-space:pre-wrap;
-  max-width:470px;
-  max-height: 100px;
-  position: absolute;
-  display: block;
-  text-overflow:ellipsis;
-  word-wrap:break-word;
-  overflow:hidden;
-  max-height: 4em;
-  line-height: 1.4em;
+  position: relative;
   text-align: left;
   padding: 20px;
-  margin-top: -20px;
-  font-style:normal;
-  color: rgb(0, 255, 0);
- 
+  margin-top: -10px;
+  font-style: italic;
+  color: white;
 }
 
 .userInfo {
   position: relative;
-  margin-top:80px;
-  margin-left:480px;
   text-align: right;
   padding-right: 5px;
   color: #ffcd00;
@@ -373,7 +409,6 @@ li.li-login a {
   padding-right: 5px;
   color: #eee;
   font-size: 10px;
-  margin-left:500px;
   bottom:0px;
 }
 
@@ -486,38 +521,6 @@ form.login-form {
   border-radius: 5px;
   text-transform: uppercase;
   font-family: "Poppins-SB";
-}
-.DisplayThread{
-  position:absolute;
-  width:100%;
-  text-align:justify;
-  left:46%; 
-  margin-top: 10px;
-  color:green;
-  font-size: 20px;
-}
-.previewThread{
-  text-align:right;
-  font-size: 10px;
-  color:green;
-}
-.SendMessage{
-  forced-color-adjust:initial;
-  position:relative;
-  
-}
-
-* { 
-  word-wrap:break-word;
-}
-table {
-  table-layout:fixed;
-  width:500px;
-  word-wrap: break-word;
-  border-collapse:collapse;
-}
-input{
-  color:black;
 }
 
 /* 404 Page */
@@ -1232,6 +1235,7 @@ input{
   display:inline-block;
   background-color: #fff;
   background-image: url("./assets/404bg.png");
+  background-repeat: repeat;
 }
 
 .ap-p4-img {
@@ -1294,4 +1298,72 @@ input{
   text-align: center;
   margin-top: 100px;
   text-shadow: 2px 2px 2px white;
+}
+
+/* Help Center */
+#hc-fp {
+  background-image: url("./assets/404bg.png");
+  background-repeat: repeat;
+}
+
+#hc-credits {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+#hc-blockt {
+  padding: 0px 0px 20px 5px;
+}
+
+#hc-block {
+  background-color: transparent;
+  padding: 5px;
+}
+
+#hc-block hr {
+  border-bottom: 3px solid black;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.hc-credits-title {
+  font-family: 'Poppins-B';
+  font-size: 3em;
+  color: black;
+  text-align: left;
+  padding: 5px 5px 0px 5px;
+  text-transform: uppercase;
+}
+
+.hc-credits-subt {
+  font-family: 'Poppins-SB';
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hc-credits-text {
+  font-family: "OpenSans";
+  font-size: 1.3em;
+  line-height: 1.1em;
+  color: black;
+  text-align: left;
+  padding: 0px 5px 5px 5px;
+}
+
+.hc-credits-text a {
+  text-decoration: none;
+  font-family: 'OpenSans-B';
+  color: #ffcd00;
+  transition: 0.2s;
+}
+
+.hc-credits-text a:hover {
+  color: black;
+}
+
+.hc-credits-text-e {
+  font-family: 'OpenSans-R';
 }

@@ -12,8 +12,6 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faExclamationTriangle, faMobile } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-
-
 const switcher = document.querySelector('.btn');
 
 switcher.addEventListener('click', function() {
