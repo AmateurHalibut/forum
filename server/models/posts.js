@@ -2,12 +2,15 @@ module.exports = (sequelize, DataTypes) => {
 
     const posts = sequelize.define("posts", {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         post_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
         },
 >>>>>>> ef2a711... More changes for database
+=======
+>>>>>>> 3818da1... Added routes
         thread_id: {
             type: DataTypes.INTEGER,
             allowNull: false,

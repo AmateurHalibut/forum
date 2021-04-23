@@ -2,9 +2,7 @@
 
 const path = require("path");
 const express = require("express");
-//const mysql = require("mysql");
 
-// Create connection to DB
 const db = require('./models')
 
 const db = require('./models')
