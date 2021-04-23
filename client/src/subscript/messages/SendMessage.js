@@ -12,26 +12,28 @@ const SendMessage = () => {
     }
     
     const handleSendMessage = (e) => {
+        
         const MU = {message, user, threadID};
-
+        e.preventDefault();
         fetch('http://localhost:8000/info', {
-            method: 'POST',
-            headers: {"Content-Type": "application/json"},
+            method: "POST",
+            headers: {"Content-Type": "application/json", "Accept": "application/json"},
             body: JSON.stringify(MU)
         });
     }
 
     return (
         <div className="SendMessage">
+            
             <h2>Send a message:</h2>
-            <form onSubmit={handleSendMessage}>
+            <form class onSubmit={handleSendMessage}>
                 <input 
                     type="text"
                     required
                     value = {message}
                     onChange = {(e) => setMessage(e.target.value)}
                 />
-                <button>Send</button>
+                <button class = "Send">Send</button>
             </form>
         </div>
     );

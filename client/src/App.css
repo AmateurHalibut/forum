@@ -36,3 +36,64 @@
     transform: rotate(360deg);
   }
 }
+
+
+:root {
+  --green: #05ff05;
+  --white: #ffffff;
+  --black: #000000;
+}
+* {
+  color: var(--fontColor);
+  font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+}
+
+.light-theme {
+  --bg: var(--white);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+  --clr-text: var(--green);
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--white);
+  --textColor: var(--black);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+  --clr-text: var(--green);
+  
+}
+
+
+
+.btn {
+  position: absolute;
+  top: 110px;
+  right: 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+.Send {
+  position: absolute;
+  height: 40px;
+  width: 60px;
+  color:black;
+  background-color: rgb(0, 255, 0);
+}
+.Create{
+  position: absolute;
+  height: 40px;
+  width: 60px;
+  color:black;
+  background-color: rgb(0, 255, 0);
+}

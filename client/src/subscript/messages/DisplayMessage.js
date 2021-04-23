@@ -1,16 +1,28 @@
+import {Footer} from '../universal'
+
 const DisplayMessage = ({info}) => {
-    const t = window.location.pathname;
+     const t = window.location.pathname;
     if (t === "/") { //home - display all messages
         return ( 
             <div className="DisplayMessage">
-                <h2>My messages:</h2>
+                <h2>Recent messages: </h2>
                 {info.sort((a,b) => b.id - a.id).map(MU => (
+                    
                    <div id="previewMessage" key={MU.id}>
-                            <div className="messageContent"> "{MU.message}"</div>
+                       
+                     <table>
+                            <tr>                               
+                            <td class="messageContent"> "{MU.message}"</td>
                             <div className="userInfo"> - {MU.user}</div>
                             <div className="idContent"> (ID: {MU.id})</div>
+                            </tr>
+                    </table>
+                            
                    </div>
+                   
+                   
                ))}
+                <Footer/>  
             </div>
          );
     } else { //display messages only for that thread
@@ -18,13 +30,21 @@ const DisplayMessage = ({info}) => {
 
         return ( 
             <div className="DisplayMessage">
-                <h2>My messages:</h2>
+                
+                <div classname = "topic"></div>
                 {info.filter(MU => MU.threadID === newt).sort((a,b) => b.id - a.id).map(MU => (
+                    
                    <div id="previewMessage" key={MU.id}>
-                            <div className="messageContent"> "{MU.message}"</div>
-                            <div className="userInfo"> - {MU.user}</div>
-                            <div className="idContent"> (ID: {MU.id})</div>
+                       
+                            
+                                <div className="messageContent"> "{MU.message}"</div>
+                                <div className="userInfo"> - {MU.user}</div>
+                                <div className="idContent"> (ID: {MU.id})</div>
+                                
                    </div>
+                
+                   
+                   
                ))}
             </div>
          );

@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import {SendMessage, DisplayMessage} from '../subscript/messages'
-import {Navbar, Footer} from '../subscript/universal'
+import {Navbar} from '../subscript/universal'
+
 
 const Home = () => {
     const [info, setInfo] = useState(null);
@@ -22,8 +23,9 @@ const Home = () => {
                     <Navbar />
                     <SendMessage />
                     {info && <DisplayMessage info={info}/>}
+
                 </div>
-                <Footer />
+                
             </div>
         </div>
     );

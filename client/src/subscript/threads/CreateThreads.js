@@ -5,7 +5,7 @@ const CreateThreads = () => {
 
     const handleCreateThread = (e) => {
         const N = {name};
-
+        e.preventDefault();
         fetch('http://localhost:8000/threads', {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
@@ -23,7 +23,7 @@ const CreateThreads = () => {
                     value = {name}
                     onChange = {(e) => setName(e.target.value)}
                 />
-                <button>Create</button>
+                <button class = "Create">Create</button>
             </form>
         </div>
     );

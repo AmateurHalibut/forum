@@ -9,6 +9,24 @@ import Rules from './pages/Rules';
 import SignUp from './pages/SignUp';
 import Threads from './pages/Threads';
 
+
+
+const switcher = document.querySelector('.btn');
+
+switcher.addEventListener('click', function() {
+    const className = document.body.className;
+    document.body.classList.toggle('dark-theme')
+    
+    if(className === "light-theme") {
+      
+        this.idContent = "Dark";
+
+    }
+    else {
+        this.idContent = "Light";
+    }
+});
+
 function App() {
   return (
     <Router>
