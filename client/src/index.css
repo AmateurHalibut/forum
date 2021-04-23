@@ -487,7 +487,6 @@ form.login-form {
   text-transform: uppercase;
   font-family: "Poppins-SB";
 }
-<<<<<<< HEAD
 .DisplayThread{
   position:absolute;
   width:100%;
@@ -520,7 +519,6 @@ table {
 input{
   color:black;
 }
-=======
 
 /* 404 Page */
 #nf-page {
@@ -1297,4 +1295,3 @@ input{
   margin-top: 100px;
   text-shadow: 2px 2px 2px white;
 }
->>>>>>> 0e50870ec953dfac9d92c58663317f064cd09cfb
