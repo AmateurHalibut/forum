@@ -1,10 +1,10 @@
 const DisplayThreads = ({info}) => {
     return ( 
-        <div className="DisplayThread">
-            <h2>My threads:</h2>
+        <div id="disp-msg-cont">
+            <div className="dm-title">Threads</div>
             {info.map(N => (
-               <div id="previewThread" key={N.id}>
-                        <li><a href = {"/Threads/" + N.id}>{N.id + ". " + N.name}</a></li>
+               <div id="previewMessage" key={N.id}>
+                        <a href = {"/Threads/" + N.id}> {N.id + ": " + N.name}</a>
                </div>
            ))}
         </div>

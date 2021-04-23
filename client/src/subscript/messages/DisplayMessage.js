@@ -9,7 +9,7 @@ const DisplayMessage = ({info}) => {
                 {info.sort((a,b) => b.id - a.id).map(MU => (
                     
                    <div id="previewMessage" key={MU.id}>         
-                            <td class="messageContent"> "{MU.message}"</td>
+                            <div class="messageContent"> "{MU.message}"</div>
                             <div className="userInfo"> - {MU.user}</div>
                             <div className="idContent"> (ID: {MU.id})</div>
                    </div>

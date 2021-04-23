@@ -14,16 +14,17 @@ const CreateThreads = () => {
     }
 
     return (
-        <div className="CreateThread">
-            <h2>Create a thread:</h2>
+        <div id="disp-msg-cont">
+            <div className="dm-title">New Thread</div>
             <form onSubmit={handleCreateThread}>
                 <input 
                     type="text"
                     required
                     value = {name}
                     onChange = {(e) => setName(e.target.value)}
+                    className="dm-new-msg"
                 />
-                <button class = "Create">Create</button>
+                <button className="dm-button">Create</button>
             </form>
         </div>
     );

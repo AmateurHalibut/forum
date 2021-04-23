@@ -57,7 +57,6 @@ body {
   --fontColor: var(--black);
   --btnBg: var(--black);
   --btnFontColor: var(--white);
-  --clr-text: var(--green);
 }
 
 .dark-theme {
@@ -65,9 +64,7 @@ body {
   --fontColor: var(--white);
   --textColor: var(--black);
   --btnBg: var(--white);
-  --btnFontColor: var(--black);
-  --clr-text: var(--green);
-  
+  --btnFontColor: var(--black)
 }
 
 .btn {

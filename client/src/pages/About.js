@@ -278,7 +278,7 @@ const Presenter = () => {
           <Animator animation={FadeIn(-0.6)}>
             <div id={p3_main_cont}>
               <div className={p3_main}>
-                And yeah, we're <span className="p3-sp">mobile friendly</span> <FontAwesomeIcon color={"#ffcd00"} icon={["fa", "mobile"]} /> 
+                And yeah, we're <span className="p3-sp">mobile friendly <FontAwesomeIcon className="p3-sp" color={"#ffcd00"} icon={["fa", "mobile"]} /> </span>
               </div>
             </div>
           </Animator>

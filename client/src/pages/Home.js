@@ -23,7 +23,6 @@ const Home = () => {
                     <Navbar pageID={0} />
                     <SendMessage />
                     {info && <DisplayMessage info={info}/>}
-
                 </div>
                 <Footer />
             </div>

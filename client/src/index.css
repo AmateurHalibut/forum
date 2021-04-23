@@ -333,7 +333,6 @@ li.li-login a {
 .dm-title {
   font-family: 'Poppins-B';
   font-size: 2em;
-  color: black;
   text-align: left;
   padding: 5px 5px 0px 5px;
   text-transform: uppercase;
@@ -348,16 +347,20 @@ li.li-login a {
   font-size: 18px;
   padding: 0%;
   outline: none;
-  border-bottom:#636363;
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
+  border:#636363;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.dm-new-msg:invalid {
+  box-shadow: none;
 }
 
 .dm-new-msg:focus {
   color: black;
-  border-bottom:black;
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
+  border:black;
+  border-style: solid;
+  border-width: 3px;
 }
 
 .dm-button {
@@ -385,6 +388,18 @@ li.li-login a {
   border-radius:  0px;
   padding: 5px;
   margin-bottom:2px;
+  text-align: left;
+}
+
+#previewMessage a {
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+  font-family: "Poppins-SB"
+}
+
+#previewMessage a:hover {
+  color: #ffcd00;
 }
 
 .messageContent {
@@ -496,6 +511,10 @@ form.login-form {
   border-bottom-width: 3px;
 }
 
+.input-field:invalid {
+  box-shadow: none;
+}
+
 .input-field:focus {
   border-bottom: #ffcd00;
   border-bottom-style: solid;
@@ -559,6 +578,7 @@ form.login-form {
 }
 
 #nf-container-main p {
+  color: black;
   font-family: 'Poppins';
 }
 
@@ -668,6 +688,7 @@ form.login-form {
 }
 
 #nf-container-mini p {
+  color: black;
   font-family: 'Poppins';
 }
 
@@ -776,6 +797,7 @@ form.login-form {
 }
 
 .ap-header {
+  color: black;
   font-family: 'Poppins-EB';
   font-size: 5em;
   line-height: .45em;
@@ -988,7 +1010,8 @@ form.login-form {
   z-index: -1;
 }
 
-.ap-p2-quote {
+.ap-p2-quote { 
+  color: black;
   font-family: "OpenSans";
   font-size: 4em;
   display: inline-block;
@@ -998,6 +1021,7 @@ form.login-form {
 }
 
 .ap-p2-quote-mini {
+  color: black;
   font-family: "OpenSans";
   font-size: 2em;
   display: inline-block;
@@ -1173,24 +1197,28 @@ form.login-form {
 
 /* P3 main */ 
 .ap-p3-main {
+  color: black;
   font-family: "OpenSans";
   font-size: 5em;
   transition: 0.2s;
 }
 
 .ap-p3-main2 {
+  color: black;
   font-family: "OpenSans";
   font-size: 4em;
   transition: 0.2s;
 }
 
 .ap-p3-main3 {
+  color: black;
   font-family: "OpenSans";
   font-size: 3em;
   transition: 0.2s;
 }
 
 .ap-p3-main4 {
+  color: black;
   font-family: "OpenSans";
   font-size: 2em;
   transition: 0.2s;
@@ -1268,6 +1296,7 @@ form.login-form {
 }
 
 .ap-p4-main-tc {
+  color: black;
   display: inline-block;
   font-family: "OpenSans-R";
   font-size: 2.8em;
@@ -1281,6 +1310,7 @@ form.login-form {
 }
 
 .ap-p4-main-tc2 {
+  color: black;
   font-family: "OpenSans-B";
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -1291,6 +1321,7 @@ form.login-form {
 }
 
 .ap-p4-main-tc2-mini {
+  color: black;
   font-family: "OpenSans-B";
   letter-spacing: 6px;
   text-transform: uppercase;
