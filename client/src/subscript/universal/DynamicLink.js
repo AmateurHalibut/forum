@@ -1,12 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ImageHover from "./ImageHover";  // Grid hover
-
-
-const images = {
-    white: "/assets/gridWnb.png",
-    gold: "/assets/gridGnb.png",
-}
+import white from "./../../assets/gridWnb.png";
+import gold from "./../../assets/gridGnb.png";
 
 // Written link navigation
 const Links = props => {
@@ -94,8 +90,8 @@ class Grid extends React.Component {
                     <button type="button" className={"gridBtn"} onClick={this.handleButtonClick}>
 
                         {/* this.state.open -> grid is white; !this.state.open -> grid is gold, white on hover */}
-                        {this.state.open && (<ImageHover height={50} default={images.white} hover={images.white} className={"none"} altText={"Navigation"} />)}
-                        {!this.state.open && (<ImageHover height={50} default={images.gold} hover={images.white} className={"none"} altText={"Navigation"} />)}
+                        {this.state.open && (<ImageHover height={50} default={white} hover={white} className={"none"} altText={"Navigation"} />)}
+                        {!this.state.open && (<ImageHover height={50} default={gold} hover={white} className={"none"} altText={"Navigation"} />)}
 
                     </button>
                     {/* Displays dropdown only when list is open */}
