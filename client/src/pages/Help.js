@@ -1,12 +1,12 @@
 import {Navbar, Footer} from '../subscript/universal'
 
-const FAQ = () => {
+const Help = () => {
     return (  
-        <div className="FAQ">
+        <div className="Rules">
              <div id="page-container">
                 <div id="content-wrap">
                     <Navbar pageID={3}/>
-                    <h2>This is the FAQ page</h2>
+                    <h2>This is the Help Center</h2>
                 </div>
                 <Footer />
             </div>
@@ -14,4 +14,4 @@ const FAQ = () => {
     );
 }
  
-export default FAQ;
+export default Help;
