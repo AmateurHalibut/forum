@@ -9,6 +9,7 @@ import Rules from './pages/Rules';
 import SignUp from './pages/SignUp';
 import Threads from './pages/Threads';
 
+<<<<<<< HEAD
 
 
 const switcher = document.querySelector('.btn');
@@ -26,6 +27,14 @@ switcher.addEventListener('click', function() {
         this.idContent = "Light";
     }
 });
+=======
+// FontAwesome Icons
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faExclamationTriangle, faMobile } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
+library.add(faExclamationTriangle, faMobile, faGithub)
+>>>>>>> 0e50870ec953dfac9d92c58663317f064cd09cfb
 
 function App() {
   return (
