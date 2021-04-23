@@ -11,10 +11,10 @@ import Threads from './pages/Threads';
 
 // FontAwesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
+import { faExclamationTriangle, faMobile } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faExclamationTriangle, faGithub)
+library.add(faExclamationTriangle, faMobile, faGithub)
 
 function App() {
   return (
