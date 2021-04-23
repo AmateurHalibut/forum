@@ -14,7 +14,6 @@ const SendMessage = () => {
     const handleSendMessage = (e) => {
         
         const MU = {message, user, threadID};
-        e.preventDefault();
         fetch('http://localhost:8000/info', {
             method: "POST",
             headers: {"Content-Type": "application/json", "Accept": "application/json"},
