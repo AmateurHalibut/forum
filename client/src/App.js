@@ -8,6 +8,9 @@ import Login from './pages/Login';
 import Rules from './pages/Rules';
 import SignUp from './pages/SignUp';
 import Threads from './pages/Threads';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faExclamationTriangle, faMobile } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
 
@@ -27,9 +30,6 @@ switcher.addEventListener('click', function() {
     }
 });
 // FontAwesome Icons
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faExclamationTriangle, faMobile } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 library.add(faExclamationTriangle, faMobile, faGithub)
 
