@@ -1,10 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
 
     const posts = sequelize.define("posts", {
-        post_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        },
         thread_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
