@@ -13,7 +13,6 @@ import Threads from './pages/Threads';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faExclamationTriangle, faMobile } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-
 library.add(faExclamationTriangle, faMobile, faGithub)
 
 function App() {
