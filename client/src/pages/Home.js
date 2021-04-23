@@ -3,7 +3,7 @@ import {SendMessage, DisplayMessage} from '../subscript/messages'
 import {Navbar, Footer} from '../subscript/universal'
 
 
-const Home = () => {
+const Home = props => {
     const [info, setInfo] = useState(null);
 
     useEffect(() => {
@@ -15,12 +15,17 @@ const Home = () => {
             setInfo(data);
         })
     }, [])
+    let main = true;
+    if(props.main === 1) {
+        main = false;
+    }
 
     return (  
         <div className="Home">
             <div id="page-container">
                 <div id="content-wrap">
-                    <Navbar pageID={0} />
+                    {main && <Navbar pageID={0} />}
+                    {!main && <Navbar pageID={1} />}
                     <SendMessage />
                     {info && <DisplayMessage info={info}/>}
                 </div>

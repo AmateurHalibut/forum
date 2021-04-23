@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import foot from './../../assets/HuskyIcon_TwoColor.png';
 
 const Footer = props => {
     return (
@@ -12,7 +13,7 @@ const Footer = props => {
                             <tr>
                                 <td />
                                     <td>
-                                        <img className="footerImg" src="HuskyIcon_TwoColor.png" alt="M" />
+                                        <img className="footerImg" src={foot} alt="M" />
                                     </td>
                                 <td />
                             </tr>

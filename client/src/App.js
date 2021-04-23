@@ -37,13 +37,13 @@ function App() {
       <div className="App">
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Home main={0}/>
             </Route>
             <Route exact path="/Threads">
               <Threads />
             </Route>
             <Route exact path="/Threads/:id">
-              <Home />
+              <Home main={1} />
             </Route>
             <Route exact path="/About">
               <About />
