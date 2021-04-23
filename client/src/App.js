@@ -2,10 +2,10 @@ import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import About from './pages/About';
 import DoesNotExist from './pages/DoesNotExist';
-import FAQ from './pages/FAQ';
+import Credits from './pages/Credits';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Rules from './pages/Rules';
+import Help from './pages/Help';
 import SignUp from './pages/SignUp';
 import Threads from './pages/Threads';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -48,11 +48,11 @@ function App() {
             <Route exact path="/About">
               <About />
             </Route >
-            <Route exact path="/FAQ">
-              <FAQ />
+            <Route exact path="/Credits">
+              <Credits />
             </Route >
-            <Route exact path="/Rules">
-              <Rules />
+            <Route exact path="/Help">
+              <Help />
             </Route >
             <Route exact path="/Login">
               <Login />
