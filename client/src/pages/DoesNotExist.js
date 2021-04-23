@@ -60,7 +60,7 @@ const DoesNotExist = () => {
                     <div ID={containerHClass}>
                     <div className={headerClass}>
                             404: Page Not Found <FontAwesomeIcon icon="exclamation-triangle" />
-                        </div>
+                    </div>
                     </div>
                     <div id={contentClass}>
                         <p>

@@ -20,7 +20,7 @@ const Threads = () => {
         <div className="Threads">
             <div id="page-container">
                 <div id="content-wrap">
-                    <Navbar />
+                    <Navbar pageID={1} />
                     <CreateThreads />
                     {info && <DisplayThreads info={info}/>}
                 </div>
